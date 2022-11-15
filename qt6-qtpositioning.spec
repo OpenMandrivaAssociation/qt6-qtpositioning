@@ -5,7 +5,7 @@
 %define _qtdir %{_libdir}/qt%{major}
 
 Name:		qt6-qtpositioning
-Version:	6.4.0
+Version:	6.4.1
 Release:	%{?beta:0.%{beta}.1}%{?snapshot:1.%{snapshot}.}1
 %if 0%{?snapshot:1}
 # "git archive"-d from "dev" branch of git://code.qt.io/qt/qtbase.git
@@ -52,7 +52,6 @@ Qt %{major} Web Channel module
 %dir %{_qtdir}/plugins/position \
 %{_qtdir}/plugins/position/libqtposition_geoclue2.so \
 %{_qtdir}/plugins/position/libqtposition_gypsy.so \
-%{_qtdir}/plugins/position/libqtposition_nmea.so \
 %{_qtdir}/plugins/position/libqtposition_positionpoll.so
 
 %global extra_devel_files_Positioning \
