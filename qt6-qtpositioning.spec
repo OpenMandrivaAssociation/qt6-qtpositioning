@@ -22,7 +22,7 @@ BuildRequires:	%{_lib}Qt%{major}Gui-devel
 BuildRequires:	%{_lib}Qt%{major}Network-devel
 BuildRequires:	%{_lib}Qt%{major}Xml-devel
 BuildRequires:	%{_lib}Qt%{major}Widgets-devel
-BuildRequires:	%{_lib}Qt%{major}SerialPort-devel
+BuildRequires:	%{_lib}Qt%{major}SerialPort-devel = %{version}
 BuildRequires:	%{_lib}Qt%{major}Sql-devel
 BuildRequires:	%{_lib}Qt%{major}PrintSupport-devel
 BuildRequires:	%{_lib}Qt%{major}OpenGL-devel
@@ -52,6 +52,7 @@ Qt %{major} Web Channel module
 %dir %{_qtdir}/plugins/position \
 %{_qtdir}/plugins/position/libqtposition_geoclue2.so \
 %{_qtdir}/plugins/position/libqtposition_gypsy.so \
+%{_qtdir}/plugins/position/libqtposition_nmea.so \
 %{_qtdir}/plugins/position/libqtposition_positionpoll.so
 
 %global extra_devel_files_Positioning \
