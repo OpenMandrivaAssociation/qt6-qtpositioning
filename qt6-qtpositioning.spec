@@ -1,4 +1,4 @@
-%define beta beta3
+%define beta beta4
 #define snapshot 20200627
 %define major 6
 
