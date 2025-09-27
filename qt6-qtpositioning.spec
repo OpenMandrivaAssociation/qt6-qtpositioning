@@ -1,4 +1,4 @@
-%define beta beta3
+%define beta rc
 #define snapshot 20200627
 %define major 6
 
@@ -11,7 +11,7 @@ Release:	%{?beta:0.%{beta}.}%{?snapshot:0.%{snapshot}.}1
 # "git archive"-d from "dev" branch of git://code.qt.io/qt/qtbase.git
 Source:		qtpositioning-%{?snapshot:%{snapshot}}%{!?snapshot:%{version}}.tar.zst
 %else
-Source:		http://download.qt-project.org/%{?beta:development}%{!?beta:official}_releases/qt/%(echo %{version}|cut -d. -f1-2)/%{version}%{?beta:-%{beta}}/submodules/qtpositioning-everywhere-src-%{version}%{?beta:-%{beta}}.tar.xz
+Source:		https://download.qt.io/%{?beta:development}%{!?beta:official}_releases/qt/%(echo %{version}|cut -d. -f1-2)/%{version}%{?beta:-%{beta}}/submodules/qtpositioning-everywhere-src-%{version}%{?beta:-%{beta}}.tar.xz
 %endif
 Group:		System/Libraries
 Summary:	Qt %{major} Web Channel module
