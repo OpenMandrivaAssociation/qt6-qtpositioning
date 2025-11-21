@@ -31,6 +31,7 @@ BuildRequires:	%{_lib}Qt%{major}DBus-devel
 BuildRequires:	qt%{major}-cmake
 BuildRequires:	cmake(Qt%{major}Quick)
 BuildRequires:	cmake(Qt%{major}Qml)
+BuildRequires:	cmake(Qt%{major}QmlMeta)
 BuildRequires:	cmake(Qt%{major}QmlModels)
 BuildRequires:	pkgconfig(gl)
 BuildRequires:	pkgconfig(xkbcommon)
