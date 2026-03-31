@@ -5,7 +5,7 @@
 %define _qtdir %{_libdir}/qt%{major}
 
 Name:		qt6-qtpositioning
-Version:	6.10.2
+Version:	6.11.0
 Release:	%{?beta:0.%{beta}.}%{?snapshot:0.%{snapshot}.}1
 %if 0%{?snapshot:1}
 # "git archive"-d from "dev" branch of git://code.qt.io/qt/qtbase.git
@@ -45,6 +45,9 @@ BuildRequires:	cmake(Clang)
 # (and then required because of the integrity check)
 BuildRequires:	%{_lib}gpuruntime
 License:	LGPLv3/GPLv3/GPLv2
+
+%patchlist
+qtpositioning-6.11.0-compile.patch
 
 %description
 Qt %{major} Web Channel module
